@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <title>UMAP</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <body style="background-color: black">
+    
+     <header>
+          <div class="right">       
+            <div class="menubar">
+              <nav>
+                <li><a class="submenu active" href="index.html" tabindex="1">JOURNEYS</a></li>
+                <li><a class="submenu" href="journal.html" tabindex="1">JOURNAL OF LOSS</a></li>
+                <li><a class="submenu" href="process.htm" tabindex="1">PROCESS</a></li>
+                <li><a class="submenu" href="image.htm" tabindex="1">WHY WE SEE THINGS</a></li>
+              </nav>
+            </div>          
+          </div>    
+    </header>
+    
+    <!-- <a href="https://www.libertyellisfoundation.org/immigration-museum"><img src="images/1.jpg" class="center"></a> -->
+
+    <div class="header1"><!--Start of header4-->  
+          <img class="mySlides" src="images/6.jpeg" style="width:100%">
+          <img class="mySlides" src="images/7.jpg" style="width:100%">
+          <img class="mySlides" src="images/8.jpg" style="width:100%">
+          <img class="mySlides" src="images/9.jpg" style="width:100%">
+          <img class="mySlides" src="images/10.jpg" style="width:100%">
+    </div><!--End of header4-->
+
+      <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+      </script>
+
+    <p class="text">JOURNEY OF LOSS... TO FIND HAPPINESS</p><br><br>
+
+    <section class="section1">
+        <p class="text1">An analysis into the text transcripts of the journey of 1893 immigrants.</p><br><br>
+        <article class="article1">
+          <p class="text3">What?</p>
+        </article>
+        <article class="article2">
+          <p class="text4" style="width: 90%;margin-left: 75px;">I visited the Ellis Island Natiional Museum of Immigration 2 weeks ago where I got to listen to the audio recordings of some of the immigrant's journeys while going around the museum. Their stories were </p>        
+        </article>
+    </section>
+
+    <div>
+      <article class="article1">
+        <p class="text3" style="margin-top: 100px;">Dataset</p>
+        <img src="images/audio.gif" style="margin-left: -100px;">
+      </article>
+      <article class="article2">
+        <p class="text4" style="width: 90%; margin-left: 75px;"> The French Renaissance Revival structure, restored to its 1918 - 1924 appearance, tells the moving tales of the 12 million immigrants who entered America through the golden door of Ellis Island. Today, the descendants of those immigrants account for almost half of the American people.</p>
+        <p class="text4" style="margin-top: 100px; width: 90%; margin-left: 75px;">Since 1973, the Ellis Island Oral History project has been dedicated to preserving the first-hand recollections of immigrants who passed through the Ellis Island immigration station between 1892 and 1954 and the employees who worked there.<br>
+        Over the years, the project has grown to include approximately 1900 interviews. The interviews include people from dozens of countries, former Immigration and Public Health Service employees, military personnel stationed at Ellis Island and the Statue of Liberty as well as people detained at Ellis Island during World War II until it closed in 1954. Each person interviewed receives a tape of the interview which describes their daily life in the country of origin, family history, reasons for emigration, journey to New York arrival and processing at Ellis Island and the immigrants' adjustment to life in the United States.</p>
+      </article>
+    </div>
+    <div>hello</div><br><br><br><br>
+
+    <div id="root"></div>
+    <footer>
+      <p>Copyright 2019 @Sweksha Sinha</p>
+    </footer>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
